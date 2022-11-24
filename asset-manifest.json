@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/inet-admin/static/css/main.c1584e1b.css",
+    "main.js": "/inet-admin/static/js/main.c96f5da9.js",
+    "index.html": "/inet-admin/index.html",
+    "main.c1584e1b.css.map": "/inet-admin/static/css/main.c1584e1b.css.map",
+    "main.c96f5da9.js.map": "/inet-admin/static/js/main.c96f5da9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1584e1b.css",
+    "static/js/main.c96f5da9.js"
+  ]
+}
