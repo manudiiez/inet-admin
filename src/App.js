@@ -31,7 +31,7 @@ const ProtectedRoute = ({ children }) => {
 
 function App() {
   return (
-    <Router>
+    <Router basename='inet-admin/'>
       <Topbar />
       <div className="container">
         <Sidebar />

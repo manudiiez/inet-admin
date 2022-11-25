@@ -1,4 +1,6 @@
 import '../css/component/sidebar.css'
+import { AuthContext } from '../context/AuthContext'
+
 
 import {
   LineStyle,
@@ -18,8 +20,14 @@ import {
   Announcement
 } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
+import { useContext } from 'react';
 
 function Sidebar() {
+  const { dispatch } = useContext(AuthContext);
+
+  const logOut = async () => {
+    dispatch({ type: "LOGOUT" });
+  }
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -61,6 +69,13 @@ function Sidebar() {
                 <span>Alertas</span>
               </li>
             </NavLink>
+            <a to="!#" className="link" onClick={logOut}>
+              <li className="sidebarListItem">
+                <PermIdentity className="sidebarIcon" />
+
+                <span>LogOut</span>
+              </li>
+            </a>
           </ul>
         </div>
       </div>
